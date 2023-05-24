@@ -1,0 +1,88 @@
+/* =============== FONTS =============== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* =============== VARIABLES =============== */
+
+:root {
+
+    /* ========== Layouts ========== */
+
+    --mobile-layout: 375px;
+    --desktop-layout: 1440px;
+
+    /* ========== Colors ========== */
+
+    --background-color: hsl(212, 45%, 89%);
+    --card-color: hsl(0, 0%, 100%);
+    --title-color: hsl(218, 44%, 22%);
+    --text-color: hsl(220, 15%, 55%);
+
+    /* ========== Typography ========== */
+
+    /* ----- Font Family ----- */
+
+    --body-font: "Outfit", sans-serif;
+
+    /* ----- Font Size ----- */
+
+    --title-font-size: 20px;
+    --text-font-size: 15px;
+
+    /* ----- Font Weight ----- */
+
+    --regular-font-weight: 400;
+    --bold-font-weight: 700;
+}
+
+/* =============== BASE =============== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+/* =============== CARD =============== */
+
+.card {
+    width: 275px;
+    height: 425px;
+    background-color: var(--card-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    padding: 12px;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card__text {
+    text-align: center;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.card__title {
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+}
+
+.card__description {
+    color: var(--text-color);
+    font-size: var(--text-font-size);
+}
